@@ -1,7 +1,5 @@
 package homework_16;
 
-import java.util.Arrays;
-
 /**
  * TestMagicArray
  *
@@ -18,18 +16,18 @@ public class TestMagicArray {
     int index = array.indexOf(5);
     System.out.println("Индекс элемента: " + index);
 
-    boolean isDeleted1 = array.removeByIndex(3);
+    boolean isDeleted1 = array.removeValueByIndex(3);
     System.out.println("isDeleted1: " + isDeleted1);
     System.out.println(array.toString());
 
     array.add(1555);
     System.out.println(array.toString());
 
-    boolean isDeleted2 = array.removeByValue(7);
+    boolean isDeleted2 = array.remove(7);
     System.out.println("isDeleted2: " + isDeleted2);
     System.out.println(array.toString());
 
-    boolean isDeleted3 = array.removeByValue(10000000);
+    boolean isDeleted3 = array.remove(10000000);
     System.out.println("isDeleted3: " + isDeleted3);
     System.out.println(array.toString());
 

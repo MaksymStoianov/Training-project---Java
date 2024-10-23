@@ -98,7 +98,7 @@ public class MagicArray {
    *
    * @return Значение.
    */
-  public int getByIndex(int index) {
+  public int getValueByIndex(int index) {
     if (!this.isValidIndex(index)) {
       // TODO: Поправить обработку не корректного индекса.
       return Integer.MIN_VALUE;
@@ -113,7 +113,7 @@ public class MagicArray {
    *
    * @return {@code true}, если удалось удалить, иначе {@code false}.
    */
-  public boolean removeByIndex(int index) {
+  public boolean removeValueByIndex(int index) {
     if (!this.isValidIndex(index)) {
       return false;
     }
@@ -134,10 +134,10 @@ public class MagicArray {
    *
    * @return {@code true}, если удалось удалить, иначе {@code false}.
    */
-  public boolean removeByValue(int value) {
+  public boolean remove(int value) {
     int index = this.indexOf(value);
 
-    return (index != -1 && this.removeByIndex(index));
+    return (index != -1 && this.removeValueByIndex(index));
   }
 
 
