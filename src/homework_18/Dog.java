@@ -27,6 +27,15 @@ public class Dog {
 
 
   /**
+   * Возвращает имя собаки.
+   * @return Имя собаки.
+   */
+  public String getName() {
+    return this.name;
+  }
+
+
+  /**
    * Собака выполняет прыжок.
    */
   public void jump() {
