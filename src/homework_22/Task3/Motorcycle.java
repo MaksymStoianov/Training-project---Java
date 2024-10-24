@@ -16,6 +16,7 @@ public class Motorcycle extends Vehicle {
   /**
    * Запустить двигатель.
    */
+  @Override
   public void startEngine() {
     if (this.engine != null) {
       System.out.println("Motorcycle: Двигатель запущен!");
