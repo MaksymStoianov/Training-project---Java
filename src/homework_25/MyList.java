@@ -5,7 +5,7 @@ package homework_25;
  *
  * @author <a href="stoianov.maksym@gmail.com">Maksym Stoianov</a>
  */
-interface MyList<T> {
+public interface MyList<T> extends Iterable<T> {
 
   /**
    * Добавляет элемент.
