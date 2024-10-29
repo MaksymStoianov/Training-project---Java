@@ -5,7 +5,7 @@ package homework_25;
  *
  * @author <a href="stoianov.maksym@gmail.com">Maksym Stoianov</a>
  */
-public interface MyList<T> {
+interface MyList<T> {
 
   /**
    * Добавляет элемент.
