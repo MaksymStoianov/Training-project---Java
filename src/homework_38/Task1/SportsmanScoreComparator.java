@@ -3,7 +3,7 @@ package homework_38.Task1;
 import java.util.Comparator;
 
 /**
- * SportsmanComparator
+ * SportsmanScoreComparator
  *
  * @author <a href="stoianov.maksym@gmail.com">Maksym Stoianov</a>
  */
