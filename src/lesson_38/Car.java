@@ -42,11 +42,20 @@ public class Car implements Comparable<Car>{
 
   @Override
   public String toString() {
-    return "Car{" +
-           "name='" + name + '\'' +
-           ", speed=" + speed +
-           ", year=" + year +
-           '}';
+    return String.format(
+        "Car{ %sname%s:%-10s %sspeed%s:%-5s %syear%s:%-5s }",
+        Color.CYAN,
+        Color.RESET,
+        "\"" + this.name + "\"" + ",",
+
+        Color.CYAN,
+        Color.RESET,
+        this.speed + ",",
+
+        Color.CYAN,
+        Color.RESET,
+        this.year
+    );
   }
 
   @Override
