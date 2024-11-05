@@ -33,7 +33,7 @@ public class Main {
 
 
     System.out.println(String.format(
-        Color.CYAN + "" + TextStyle.BOLD + "%-25s %-10s %-10s"+ Color.RESET,
+        Color.CYAN + "" + TextStyle.BOLD + "%-25s %-10s %-10s" + Color.RESET,
         "",
         "ArrayList",
         "LinkedList"
@@ -48,7 +48,7 @@ public class Main {
     endTime2 = System.currentTimeMillis();
 
     System.out.println(String.format(
-        Color.CYAN +"%-25s"+ Color.RESET + " %-10s %-10s",
+        Color.CYAN + "%-25s" + Color.RESET + " %-10s %-10s",
         "getElementByIndex()",
         (endTime1 - startTime1) + " ms",
         (endTime2 - startTime2) + " ms"
@@ -64,7 +64,7 @@ public class Main {
     endTime2 = System.currentTimeMillis();
 
     System.out.println(String.format(
-        Color.CYAN +"%-25s"+ Color.RESET + " %-10s %-10s",
+        Color.CYAN + "%-25s" + Color.RESET + " %-10s %-10s",
         "insertRandomValues()",
         (endTime1 - startTime1) + " ms",
         (endTime2 - startTime2) + " ms"
@@ -80,7 +80,7 @@ public class Main {
     endTime2 = System.currentTimeMillis();
 
     System.out.println(String.format(
-        Color.CYAN +"%-25s"+ Color.RESET + " %-10s %-10s",
+        Color.CYAN + "%-25s" + Color.RESET + " %-10s %-10s",
         "deleteByRandomIndex()",
         (endTime1 - startTime1) + " ms",
         (endTime2 - startTime2) + " ms"
@@ -96,7 +96,7 @@ public class Main {
     endTime2 = System.currentTimeMillis();
 
     System.out.println(String.format(
-        Color.CYAN +"%-25s"+ Color.RESET + " %-10s %-10s",
+        Color.CYAN + "%-25s" + Color.RESET + " %-10s %-10s",
         "deleteByValue()",
         (endTime1 - startTime1) + " ms",
         (endTime2 - startTime2) + " ms"
@@ -124,7 +124,7 @@ public class Main {
    *
    * @param list Список 1.
    */
-  public static <T> void getElementByIndex(List<T> list) {
+  public static <T> void getElementByIndex(List<Integer> list) {
     for (int i = 0; i < list.size(); i++) {
       list.get(i);
     }
