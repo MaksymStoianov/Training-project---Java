@@ -1,11 +1,10 @@
 package homework_32.Layers.repository;
 
 import homework_32.Layers.model.Car;
-import homework_32.Layers.model.User;
 import homework_32.Layers.view.Color;
+import homework_32.Layers.view.TextStyle;
 import homework_32.Layers.utils.MyArrayList;
 import homework_32.Layers.utils.MyList;
-import homework_39.TextStyle;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
