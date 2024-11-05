@@ -45,17 +45,17 @@ public class Main {
    * @return Список состоящий из элементов, которые присутствуют в обеих коллекциях.
    */
   public static <T> List<T> getCommonElements(List<T> list1, List<T> list2) {
-//    List<T> result = new ArrayList<>();
-//
-//    for (T element : list1) {
-//      if (list2.contains(element)) {
-//        result.add(element);
-//      }
-//    }
+    //    List<T> result = new ArrayList<>();
+    //
+    //    for (T element : list1) {
+    //      if (list2.contains(element)) {
+    //        result.add(element);
+    //      }
+    //    }
 
     List<T> result = new ArrayList<>(list1);
 
-    result.removeAll(list2);
+    result.retainAll(list2);
 
     return result;
   }
