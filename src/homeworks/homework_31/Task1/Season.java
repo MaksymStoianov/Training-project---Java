@@ -1,4 +1,4 @@
-package homeworks.homework_31;
+package homeworks.homework_31.Task1;
 
 /**
  * Season
