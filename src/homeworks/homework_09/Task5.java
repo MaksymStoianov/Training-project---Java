@@ -1,24 +1,24 @@
 package homeworks.homework_09;
 
-public class Task5 {
+public class Task4 {
   /**
-   * Написать метод, который принимает массив строк.
-   * Вывести на экран все символы самой длинной строки из массива.
+   * Написать программу, выводящую на экран треугольник,
+   * состоящий из цифр от 1 до 6 такого вида:
+   *
+   * 1
+   * 12
+   * 123
+   * 1234
+   * 12345
+   * 123456
    */
   public static void main(String[] args) {
-    String[] array = { "One", "Two", "Twenty" };
-
-    String longestString = array[0];
-
-    for (String str : array) {
-      if (str.length() > longestString.length()) {
-        longestString = str;
+    for (int i = 1; i <= 6; i++) {
+      for (int j = 1; j <= i; j++) {
+        System.out.print(j);
       }
-    }
 
-    System.out.println("Символы самой длинной строки \"" + longestString + "\":");
-    for (int i = 0; i < longestString.length(); i++) {
-      System.out.println(longestString.charAt(i));
+      System.out.println();
     }
   }
 }

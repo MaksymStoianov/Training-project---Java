@@ -1,24 +1,71 @@
 package homeworks.homework_09;
 
-public class Task4 {
-  /**
-   * Написать программу, выводящую на экран треугольник,
-   * состоящий из цифр от 1 до 6 такого вида:
-   *
-   * 1
-   * 12
-   * 123
-   * 1234
-   * 12345
-   * 123456
-   */
-  public static void main(String[] args) {
-    for (int i = 1; i <= 6; i++) {
-      for (int j = 1; j <= i; j++) {
-        System.out.print(j);
-      }
+import java.util.Arrays;
+import java.util.Random;
 
-      System.out.println();
-    }
+public class Task3 {
+
+
+  public static void main(String[] args) {
+    int[] array = createArray(50, 1, 100);
+
+    System.out.println("Массив случайных чисел:");
+    System.out.println(Arrays.toString(array));
+
+    findPrimeNumbers(array);
   }
+
+
+  /**
+   * Метод для проверки, является ли число простым
+   */
+  public static boolean isPrime(int number) {
+    if (number <= 1) {
+      return false;
+    }
+
+    for (int i = 2; i <= Math.sqrt(number); i++) {
+      if (number % i == 0) {
+        return false;
+      }
+    }
+
+    return true;
+  }
+
+
+
+  /**
+   * Метод для заполнения массива случайными числами
+   */
+  public static int[] createArray(int amount, int min, int max) {
+    Random random = new Random();
+    int[] array = new int[amount];
+    int primeCount = 0;
+
+    // Заполняем массив случайными числами
+    for (int i = 0; i < array.length; i++) {
+      array[i] = random.nextInt((max - min) + 1) + min;
+    }
+
+    return array;
+  }
+
+
+  public static void findPrimeNumbers(int[] array) {
+    System.out.println("\nПростые числа в массиве:");
+
+    int count = 0;
+
+    for (int number : array) {
+      if (isPrime(number)) {
+        System.out.print(number + " ");
+        count++;
+      }
+    }
+
+    System.out.println("\nКоличество простых чисел: " + count);
+  }
+
 }
+
