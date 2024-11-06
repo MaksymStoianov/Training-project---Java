@@ -1,6 +1,6 @@
 package homeworks.homework_09;
 
-public class Task5 {
+public class Task6 {
   /**
    * Написать метод, который принимает массив строк.
    * Вывести на экран все символы самой длинной строки из массива.

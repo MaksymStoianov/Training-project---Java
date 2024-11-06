@@ -1,7 +1,8 @@
-package homeworks.homework_28;
+package homeworks.homework_28.Task3;
 
 import homeworks.homework_25.Task1.MyArrayList;
 import homeworks.homework_25.Task1.MyList;
+import homeworks.homework_28.Task1.Rectangle;
 
 /**
  * Task3

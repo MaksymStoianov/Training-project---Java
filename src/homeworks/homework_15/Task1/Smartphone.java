@@ -1,4 +1,4 @@
-package homeworks.homework_15;
+package homeworks.homework_15.Task1;
 
 public class Smartphone extends Device {
   protected String color;

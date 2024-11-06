@@ -1,4 +1,4 @@
-package homeworks.Task1;
+package homeworks.homework_23.Task1;
 
 /**
  * Triangle

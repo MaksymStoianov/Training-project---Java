@@ -1,4 +1,4 @@
-package homeworks.homework_25;
+package homeworks.homework_25.Task1;
 
 /**
  * Mylist

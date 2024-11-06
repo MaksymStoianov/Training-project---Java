@@ -1,4 +1,4 @@
-package homeworks.homework_16;
+package homeworks.homework_16.Task1;
 
 /**
  * MagicArray

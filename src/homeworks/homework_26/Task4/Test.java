@@ -1,4 +1,4 @@
-package homeworks.homework_26.Task3;
+package homeworks.homework_26.Task4;
 
 /**
  * TEst

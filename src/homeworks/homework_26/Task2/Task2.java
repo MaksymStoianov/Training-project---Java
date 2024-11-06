@@ -1,6 +1,6 @@
 package homeworks.homework_26.Task2;
 
-import homeworks.homework_25.MyArrayList;
+import homeworks.homework_25.Task1.MyArrayList;
 
 /**
  * Task2

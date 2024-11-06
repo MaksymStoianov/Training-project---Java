@@ -1,4 +1,4 @@
-package homeworks.homework_17;
+package homeworks.homework_17.Task1;
 
 /**
  * Employee

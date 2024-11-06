@@ -1,6 +1,6 @@
 package homeworks.homework_09;
 
-public class Task2 {
+public class Task3 {
 
   // Пример использования метода
   public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package homeworks.homework_30;
+package homeworks.homework_30.Task2;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;

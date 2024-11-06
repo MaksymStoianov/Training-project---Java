@@ -1,7 +1,5 @@
 package homeworks.homework_27.Task2;
 
-import homeworks.homework_27.Person;
-
 /**
  * Test
  *

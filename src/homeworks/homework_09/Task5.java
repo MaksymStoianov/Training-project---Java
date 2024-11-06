@@ -1,6 +1,6 @@
 package homeworks.homework_09;
 
-public class Task4 {
+public class Task5 {
   /**
    * Написать программу, выводящую на экран треугольник,
    * состоящий из цифр от 1 до 6 такого вида:

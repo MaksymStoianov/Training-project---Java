@@ -1,4 +1,4 @@
-package homeworks.homework_28;
+package homeworks.homework_28.Task1;
 
 import homeworks.homework_25.Task1.MyList;
 

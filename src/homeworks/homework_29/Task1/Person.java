@@ -1,4 +1,4 @@
-package homeworks.homework_29;
+package homeworks.homework_29.Task1;
 
 /**
  * Person

@@ -1,4 +1,4 @@
-package homeworks.homework_15;
+package homeworks.homework_15.Task1;
 
 public class Computer extends Device {
   // Размер оперативной памяти (в ГБ)

@@ -1,4 +1,4 @@
-package homeworks.homework_19;
+package homeworks.homework_19.Task1;
 
 /**
  * Calculator

@@ -1,4 +1,6 @@
-package homeworks.homework_28;
+package homeworks.homework_28.Task2;
+
+import homeworks.homework_28.Task1.Rectangle;
 
 /**
  * Test2

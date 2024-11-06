@@ -1,4 +1,4 @@
-package homeworks.homework_19;
+package homeworks.homework_19.Task5;
 
 import homeworks.homework_18.Task2.Dog;
 
