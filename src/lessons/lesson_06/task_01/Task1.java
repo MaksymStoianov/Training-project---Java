@@ -1,6 +1,6 @@
-package lessons.lesson_05.task_01;
+package lessons.lesson_06.task_01;
 
-public class Main {
+public class Task1 {
   public static void main(String[] args) {
     int x = 1;
     String text = "Значение переменной равно ";
