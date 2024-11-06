@@ -5,8 +5,8 @@
 
 Обсуждались способы улучшения логики и повышения читаемости кода.
 
-### Преподаватель
-- [Sergii Bugaienko](https://github.com/Bugaienko)
+### Репозиторий проекта
+- [LibraryApp](https://github.com/s-saratov/LibraryApp)
 
 ### Участники команды
 - [Oleh Demishev](https://github.com/OlehDemishev)
@@ -14,5 +14,5 @@
 - [Sergej Saratov](https://github.com/s-saratov)
 - [Maksym Stoianov](https://github.com/MaksymStoianov)
 
-### Репозиторий проекта
-- [LibraryApp](https://github.com/s-saratov/LibraryApp)
+### Преподаватель
+- [Sergii Bugaienko](https://github.com/Bugaienko)

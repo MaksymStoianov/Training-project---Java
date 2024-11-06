@@ -7,8 +7,8 @@
 
 Проект был успешно завершен, и все участники получили опыт совместной работы над Java-приложением.
 
-### Преподаватель
-- [Sergii Bugaienko](https://github.com/Bugaienko)
+### Репозиторий проекта
+- [LibraryApp](https://github.com/s-saratov/LibraryApp)
 
 ### Участники команды
 - [Oleh Demishev](https://github.com/OlehDemishev)
@@ -16,5 +16,5 @@
 - [Sergej Saratov](https://github.com/s-saratov)
 - [Maksym Stoianov](https://github.com/MaksymStoianov)
 
-### Репозиторий проекта
-- [LibraryApp](https://github.com/s-saratov/LibraryApp)
+### Преподаватель
+- [Sergii Bugaienko](https://github.com/Bugaienko)
