@@ -1,5 +1,7 @@
 package homeworks.homework_41.Task2;
 
+import homeworks.homework_41.Task1.StringUtil;
+
 import java.util.Comparator;
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -27,21 +29,7 @@ public class FrequencyDictionary {
 
 
   private static Map<String, Integer> frequencyDictionary(String text) {
-    String[] values = text
-        .trim()
-        .toLowerCase()
-        .replaceAll("[^a-zA-Z0-9а-яА-Я]", " ")
-        .split("\\s+");
-
-    // LinkedHashMap, сохраняет порядок добавления символов.
-    Map<String, Integer> map = new LinkedHashMap<>();
-
-    // Считаем количество вхождений.
-    for (String item : values) {
-      map.put(item, map.getOrDefault(item, 0) + 1);
-    }
-
-    return map;
+    return StringUtil.getWordCounts(text);
   }
 
 
