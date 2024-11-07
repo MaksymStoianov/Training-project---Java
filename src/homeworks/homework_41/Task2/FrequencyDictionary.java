@@ -1,11 +1,6 @@
 package homeworks.homework_41.Task2;
 
-import homeworks.homework_41.Task1.StringUtil;
-
-import java.util.Comparator;
-import java.util.LinkedHashMap;
 import java.util.Map;
-import java.util.TreeMap;
 
 /**
  * FrequencyDictionary
@@ -34,16 +29,7 @@ public class FrequencyDictionary {
 
 
   private static Map<Character, Integer> frequencyCharsDictionary(String text) {
-    // TreeMap, натуральная сортировка.
-    Map<Character, Integer> map = new TreeMap<>(Comparator.naturalOrder());
-
-    // Считаем количество вхождений.
-    for (Character item : text.toCharArray()) {
-      map.put(item, map.getOrDefault(item, 0) + 1);
-    }
-
-    return map;
+    return StringUtil.getCharCounts(text);
   }
-
 
 }
