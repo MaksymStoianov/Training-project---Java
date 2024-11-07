@@ -3,7 +3,7 @@ package homeworks.homework_41.Task1;
 import java.util.*;
 
 /**
- * SetExample
+ * StringUtil
  *
  * @author <a href="stoianov.maksym@gmail.com">Maksym Stoianov</a>
  */
