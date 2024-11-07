@@ -17,22 +17,23 @@ public class StringUtil {
    */
   public static List<String> getUniqueSortedWords(String input) {
     String[] words = input
-        // Заменяет все не буквы на пустоту.
+        .trim()
         .replaceAll("[^a-zA-Z0-9а-яА-Я ]", "")
-
-        // Преобразовывает строку в массив слов.
         .split("\\s+");
 
     // Преобразуем массив в коллекцию уникальных слов.
-    Set<String> set = new LinkedHashSet<>(List.of(words));
+    Set<String> uniqueWords = new TreeSet<>(
+        Comparator
+            // Сортируем по длине
+            .comparing(String::length)
 
-    // Преобразуем Set в List для сортировки
-    List<String> result = new ArrayList<>(set);
+            // Сортируем по алфавиту
+            .thenComparing(Comparator.naturalOrder())
+    );
 
-    // Сортируем по длине, затем по алфавиту
-    result.sort(Comparator.comparingInt(String::length));
+    uniqueWords.addAll(Arrays.asList(words));
 
-    return result;
+    return new ArrayList<>(uniqueWords);
   }
 
 }
