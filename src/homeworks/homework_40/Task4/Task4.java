@@ -18,15 +18,24 @@ public class Task4 {
 
 
   public static void main(String[] args) {
-    int size = 5_000;
+    int size = 50_000;
     int min = 0;
     int max = 1_000;
     List<Integer> ints1 = new ArrayList<>();
     List<Integer> ints2 = new LinkedList<>();
 
     // Заполнить массив случайными значениями от 0 до 1_000.
-    fillRandomValues(ints1, size, min, max);
-    fillRandomValues(ints2, size, min, max);
+    //    fillRandomValues(ints1, size, min, max);
+    //    fillRandomValues(ints2, size, min, max);
+
+    for (int i = 0; i < size; i++) {
+      int val = random.nextInt(max);
+      ints1.add(val);
+      ints2.add(val);
+    }
+
+    System.out.println(ints1.size());
+    System.out.println(ints2.size());
 
 
     long startTime1, endTime1, startTime2, endTime2;
