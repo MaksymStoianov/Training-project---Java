@@ -22,4 +22,5 @@ public class Task1 {
         .filter(item -> item < 100)
         .toList();
   }
+
 }

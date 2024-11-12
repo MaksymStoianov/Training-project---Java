@@ -12,7 +12,6 @@ import java.util.Objects;
  */
 public class Task3 {
   public static void main(String[] args) {
-
     List<Person> values = List.of(
         new Person("Person1", 15, "city1"),
         new Person("Person2", 17, "city2"),
@@ -31,4 +30,5 @@ public class Task3 {
         .filter(item -> Objects.equals("city2", item.getCity()))
         .toList();
   }
+
 }

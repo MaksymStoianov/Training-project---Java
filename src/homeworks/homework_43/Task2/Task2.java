@@ -31,4 +31,5 @@ public class Task2 {
         .distinct() // Удаляет дубликаты
         .toList();
   }
+
 }
