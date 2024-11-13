@@ -22,3 +22,4 @@ public enum TextStyle {
     return code;
   }
 }
+

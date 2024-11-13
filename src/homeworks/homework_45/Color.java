@@ -27,5 +27,5 @@ public enum Color {
   public String toString() {
     return this.code;
   }
-
 }
+

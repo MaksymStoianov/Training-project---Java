@@ -57,5 +57,4 @@ public class PasswordValidator {
 
     return true;
   }
-
 }

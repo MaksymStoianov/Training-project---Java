@@ -5,3 +5,4 @@ public class PasswordValidateException extends RuntimeException {
     super(message);
   }
 }
+
