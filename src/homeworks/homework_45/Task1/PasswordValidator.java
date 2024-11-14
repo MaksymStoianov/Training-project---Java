@@ -1,5 +1,9 @@
 package homeworks.homework_45.Task1;
 
+import homeworks.homework_45.Color;
+
+import java.util.Objects;
+
 /**
  * PasswordValidator
  *
@@ -13,11 +17,10 @@ public class PasswordValidator {
    * @param password Строка.
    * @return {@code true}, если строка является валидным паролем; иначе {@code false}.
    */
-  public static boolean isValidPassword(String password) throws PasswordValidateException {
-    if (password == null || password.length() < 8) {
-      throw new PasswordValidateException("Пароль должен содержать минимум 8 символов.");
-    }
+  public static boolean isValidPassword(String password)
+      throws PasswordValidateException {
 
+    boolean hasMinLength = !(password == null || password.length() < 8);
     boolean hasDigit = false;
     boolean hasLower = false;
     boolean hasUpper = false;
@@ -25,36 +28,67 @@ public class PasswordValidator {
 
     String symbols = "!%$@&*()[].,-";
 
-    for (int i = 0; i < password.length(); i++) {
-      char ch = password.charAt(i);
+    if (password != null) {
+      for (int i = 0; i < password.length(); i++) {
+        char ch = password.charAt(i);
 
-      if (Character.isDigit(ch)) {
-        hasDigit = true;
-      } else if (Character.isLowerCase(ch)) {
-        hasLower = true;
-      } else if (Character.isUpperCase(ch)) {
-        hasUpper = true;
-      } else if (symbols.indexOf(ch) >= 0) {
-        hasSpecial = true;
+        if (Character.isDigit(ch)) {
+          hasDigit = true;
+        }
+
+        if (Character.isLowerCase(ch)) {
+          hasLower = true;
+        }
+
+        if (Character.isUpperCase(ch)) {
+          hasUpper = true;
+        }
+
+        if (symbols.indexOf(ch) >= 0) {
+          hasSpecial = true;
+        }
+      }
+
+      if (hasMinLength && hasDigit && hasLower && hasUpper && hasSpecial) {
+        return true;
       }
     }
 
-    if (!hasDigit) {
-      throw new PasswordValidateException("Пароль должен содержать минимум одну цифру.");
-    }
-    
-    if (!hasLower) {
-      throw new PasswordValidateException("Пароль должен содержать минимум одну маленькую букву.");
-    }
-    
-    if (!hasUpper) {
-      throw new PasswordValidateException("Пароль должен содержать минимум одну большую букву.");
-    }
-    
-    if (!hasSpecial) {
-      throw new PasswordValidateException("Пароль должен содержать минимум один специальный символ (" + symbols + ")");
-    }
+    StringBuilder result = new StringBuilder()
+        .append(Color.RESET)
+        .append(Color.RED)
+        .append("Невалидный пароль!")
+        .append(Color.RESET);
 
-    return true;
+    result
+        .append("\n ")
+        .append(hasMinLength ? "✅" : "❌")
+        .append(" – пароль содержит минимум 8 символов;");
+
+    result
+        .append("\n ")
+        .append(hasDigit ? "✅" : "❌")
+        .append(" – пароль содержит минимум одну цифру;");
+
+    result
+        .append("\n ")
+        .append(hasLower ? "✅" : "❌")
+        .append(" – пароль содержит минимум одну маленькую букву;");
+
+    result
+        .append("\n ")
+        .append(hasUpper ? "✅" : "❌")
+        .append(" – пароль содержит минимум одну большую букву;");
+
+    result
+        .append("\n ")
+        .append(hasSpecial ? "✅" : "❌")
+        .append(" – пароль содержит минимум один специальный символ (")
+        .append(Color.CYAN)
+        .append(symbols)
+        .append(Color.RESET)
+        .append(").");
+
+    throw new PasswordValidateException(result.toString());
   }
 }

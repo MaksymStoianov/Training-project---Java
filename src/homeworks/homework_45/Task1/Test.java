@@ -20,7 +20,7 @@ public class Test {
     }
 
 
-    String password = "passWord!.com";
+    String password = "passW!.1";
 
     try {
       PasswordValidator.isValidPassword(password);
